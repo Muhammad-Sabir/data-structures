@@ -28,8 +28,6 @@ def isAnagram2(s, t):
         else: 
             hashT[t[i]] += 1
 
-    print(hashS)
-    print(hashT)
     return hashS == hashT
 
 print(isAnagram2("hill", "hlil"))
