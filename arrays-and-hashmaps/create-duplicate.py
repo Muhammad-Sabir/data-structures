@@ -43,7 +43,7 @@ print(containsDuplicate3([1, 1, 2, 56]))
 # solution 4
 
 def containsDuplicate4(nums):
-    templist = {}
+    hashList = {}
 
     for i in range(len(nums)):
         if str(nums[i]) in templist:
