@@ -53,5 +53,4 @@ def containsDuplicate4(nums):
 
     return False
 
-
 print(containsDuplicate4([1, 1, 2, 56]))

@@ -7,3 +7,29 @@ def isAnagram(s, t):
 
 print(isAnagram("hola", "aloh"))
 print(isAnagram("hola", "allh"))
+
+# solution 2
+
+def isAnagram2(s, t):
+    if (len(s) != len(t)):
+        return False
+
+    hashS = {}
+    hashT = {}
+
+    for i in range(len(s)):
+        if s[i] not in hashS:
+            hashS[s[i]] = 1
+        else: 
+            hashS[s[i]] += 1
+
+        if t[i] not in hashT:
+            hashT[t[i]] = 1
+        else: 
+            hashT[t[i]] += 1
+
+    print(hashS)
+    print(hashT)
+    return hashS == hashT
+
+print(isAnagram2("hill", "hlil"))
