@@ -39,3 +39,19 @@ def containsDuplicate3(nums):
 
 
 print(containsDuplicate3([1, 1, 2, 56]))
+
+# solution 4
+
+def containsDuplicate4(nums):
+    templist = {}
+
+    for i in range(len(nums)):
+        if str(nums[i]) in templist:
+            return True
+        else:
+            templist[str(nums[i])] = i
+
+    return False
+
+
+print(containsDuplicate4([1, 1, 2, 56]))
